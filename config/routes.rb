@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :v1 do
+    resources :categories, only: [:index]
+
+    get 'category', to: 'categories#show', as: :category
+    get 'products', to: 'categories#products', as: :products
+  end
 end
