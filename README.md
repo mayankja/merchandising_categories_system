@@ -131,3 +131,11 @@ This repository contains the solution for **[merchandising categories problem](h
     ```curl
       curl --location --request GET 'http://localhost:3000/v1/products.json?name=pets'
     ```
+
+### For Running Test cases
+
+  For test cases Rail Mini test is used, below command is for running them.
+
+  ```bash
+    bundle exec rails test
+  ```
